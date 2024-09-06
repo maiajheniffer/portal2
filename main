@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Portal</title>
+</head>
+<body>
+    <h1>Document Portal</h1>
+    <form action="https://api.signrequest.com/v1/documents" method="post" enctype="multipart/form-data">
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+    <form action="/sign" method="post">
+        <label for="documentId">Document ID:</label>
+        <input type="text" id="documentId" name="documentId">
+        <button type="submit">Sign Document</button>
+    </form>
+</body>
+</html>
